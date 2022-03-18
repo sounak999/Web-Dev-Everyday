@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Roboto+Mono:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {}
+
+        body {
+            font-family: 'League Spartan', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            background-color: rgb(248, 242, 237);
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 10px 5px;
+            background: rgb(243, 211, 211);
+        }
+
+        #fruit {
+            float: right;
+            width: 47%;
+        }
+
+        #computer {
+            float: left;
+            /* float: right; */
+            width: 47%;
+        }
+
+        #stationary {
+            /* float: left; */
+            /* clear: left; */
+            clear: both;
+            width: 97%;
+        }
+
+        p, h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h2 {
+            margin: 23px auto;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome to my Store</h2>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero tempora
+                eius facere, quas minima ipsum totam dolorum, rerum esse a distinctio quidem, sunt nam. Quasi ad nam
+                fuga nemo.
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero
+                tempora eius facere, quas minima ipsum totam dolorum, rerum esse a distinctio quidem, sunt nam. Quasi ad
+                nam fuga nemo.
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero
+                tempora eius facere, quas minima ipsum totam dolorum, rerum esse a distinctio quidem, sunt nam. Quasi ad
+                nam fuga nemo.
+            </p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero
+                tempora eius facere, quas minima ipsum totam dolorum, rerum esse a distinctio quidem, sunt nam. Quasi ad
+                nam fuga nemo.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
