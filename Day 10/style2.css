@@ -11,7 +11,7 @@ html {
   /* width: 400px; */
   width: 100vw;
   /* height: 344px; */
-  height: 100vh;
+  height: 50vh;
   /* We'll use vh more and more as compared to vw since we can set width using percentage(%) */
 
   font-size: 10px;
