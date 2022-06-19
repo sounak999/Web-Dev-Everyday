@@ -1,9 +1,18 @@
-document.querySelector("button").addEventListener("click", function ()
-{
-    alert("I got clicked");   
+var noOfDrumButtons = document.querySelectorAll("button").length;
 
-    // What to do when click detected
-})
+for (var i = 0; i < noOfDrumButtons; i++) {
+  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+    var audio = new Audio("sounds/crash.mp3");
+    audio.play();
+  });
+}
+
+// document.querySelector("button").addEventListener("click", function ()
+// {
+//     alert("I got clicked");
+
+//     // What to do when click detected
+// })
 
 // document.querySelector("button").addEventListener("click", handleClick);
 
