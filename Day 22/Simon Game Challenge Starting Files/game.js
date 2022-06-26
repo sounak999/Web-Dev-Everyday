@@ -9,8 +9,8 @@ var userClickedPattern = [];
 
 
 // bool variable to check if the game has already started or not
-var started = false;
 var level = 0;
+var started = false;
 
 
 // press any key to start the game
@@ -57,10 +57,12 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over")
         }, 200);
 
-        $("#level-title").text("Game Over, Press Any Key to Restart");    
+        $("#level-title").text("Game Over, Press Any Key to Restart");   
+        startOver(); 
     }
 }
 
+// computer generated pattern function block
 function nextSequence() {
 
     userClickedPattern = [];
@@ -77,15 +79,27 @@ function nextSequence() {
     playSound(randomChosenColour);
 }
 
+
+// Utility function to play a particular sound
 function playSound(name) {
     var audio = new Audio("sounds/" + name + ".mp3");
     audio.play();
 }
 
+
+// Utility function to animate buttons
 function animatePress(currentColour) {
     $("#" + currentColour).addClass("pressed");
 
     setTimeout(function () {
         $("#" + currentColour).removeClass("pressed");
     }, 100);    
+}
+
+
+// resetting level, started and computer generated pattern
+function startOver() {
+    level = 0;
+    gamePattern = [];
+    started = false;
 }
