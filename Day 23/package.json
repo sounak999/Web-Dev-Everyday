@@ -9,6 +9,7 @@
   "author": "Sounak Saha",
   "license": "ISC",
   "dependencies": {
+    "pokemon": "^2.3.3",
     "superheroes-cli": "^1.0.0"
   }
 }
